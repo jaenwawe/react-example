@@ -6,6 +6,7 @@ import SecondComponent from './components/my-second-component';
 import NavComponent from './components/nav-component';
 import { HashRouter, BrowserRouter } from 'react-router-dom';
 import { Switch, Route } from 'react-router';
+import { ClickerComponent } from './components/clicker-component';
 
 /*
   Components
@@ -36,6 +37,7 @@ const App: React.FC = () => {
         <Switch>
           <Route path="/first" component={FirstComponent} />
           <Route path="/second" component={SecondComponent} />
+          <Route path="/clicker" component={ClickerComponent} />
           <Route component={FirstComponent} />
         </Switch>
       </div>

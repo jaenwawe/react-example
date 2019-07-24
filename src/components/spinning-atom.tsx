@@ -1,5 +1,6 @@
 import *  as React from 'react' ;
-import logo from '../logo.svg';
+//This is Ed not sure who also did a spinning Atom but I updated your import to share my file in assets to fix error
+import logo from '../assets/logo.svg'; 
 export class SpinningAtom extends React.Component<any, any> {
   constructor(props:any) {
     super(props)

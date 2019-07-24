@@ -7,7 +7,11 @@ import NavComponent from './components/nav-component';
 import { HashRouter, BrowserRouter } from 'react-router-dom';
 import { Switch, Route } from 'react-router';
 import { ClickerComponent } from './components/clicker-component';
+<<<<<<< HEAD
 import { LukeComponent } from './components/luke-component';
+=======
+import { KHComponent } from './components/kh-component';
+>>>>>>> 1df78a5339c816c767a76cbb0d2ffa7f47ded02e
 import { SpinnerComponent } from './components/spinner-component';
 import { SpinningAtom } from './components/spinning-atom';
 import BallComponent from './components/ball-component';
@@ -46,7 +50,11 @@ const App: React.FC = () => {
           <Route path="/first" component={FirstComponent} />
           <Route path="/second" component={SecondComponent} />
           <Route path="/clicker" component={ClickerComponent} />
+<<<<<<< HEAD
           <Route path="/luke" component={LukeComponent} />
+=======
+          <Route path="/kh" component={KHComponent} />
+>>>>>>> 1df78a5339c816c767a76cbb0d2ffa7f47ded02e
           <Route path="/spinner" component={SpinnerComponent} />
           <Route path="/spinning-atom" component={SpinningAtom} />
           <Route path="/ball" component={BallComponent} />

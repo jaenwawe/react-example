@@ -6,7 +6,7 @@ export default class BallComponent extends React.Component<any, any> {
         super(props);
         this.state = {
             inverted: false,
-            size: 100
+            size: 200
         };
     }
 
@@ -38,7 +38,7 @@ export default class BallComponent extends React.Component<any, any> {
 
                     <div
                         className="ball"
-                        style={{ width: this.state.size }}></div>
+                        style={{ width: (this.state.size) + 'px', height: (this.state.size) + 'px' }}></div>
                 </div>
             </div>
 

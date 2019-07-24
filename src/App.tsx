@@ -8,6 +8,7 @@ import { HashRouter, BrowserRouter } from 'react-router-dom';
 import { Switch, Route } from 'react-router';
 import { ClickerComponent } from './components/clicker-component';
 import BallComponent from './components/ball-component';
+import { dieRollerComponent } from './components/dice-roller-component';
 import JessicaComponent from './components/jessicas-component';
 import FunComponent from './components/fun-page-component';
 
@@ -42,6 +43,7 @@ const App: React.FC = () => {
           <Route path="/second" component={SecondComponent} />
           <Route path="/clicker" component={ClickerComponent} />
           <Route path="/ball" component={BallComponent} />
+          <Route path="/dieRoller" component={dieRollerComponent} />
           <Route path="/Jessica" component={JessicaComponent} />
           <Route path="/fungame" component={FunComponent} />
           <Route component={FirstComponent} />

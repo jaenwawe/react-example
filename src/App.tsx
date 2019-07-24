@@ -4,7 +4,8 @@ import './App.css';
 import { FirstComponent } from './components/my-first-component';
 import SecondComponent from './components/my-second-component';
 import NavComponent from './components/nav-component';
-
+import { HashRouter, BrowserRouter } from 'react-router-dom';
+import { Switch, Route } from 'react-router';
 
 /*
   Components
@@ -24,9 +25,22 @@ import NavComponent from './components/nav-component';
 */
 const App: React.FC = () => {
   return (
-    <div>
-      <NavComponent />
-    </div>
+    // render URL as /#/route-name
+    // <BrowserRouter> is the other primary router available
+    // <Switch> - Is a list of Routes that can be rendered
+    // based on the URL context of the router
+    // localhost:3000/#/first then render FirstComponent in the switch
+    <HashRouter>
+      <div>
+        <NavComponent />
+        <Switch>
+          <Route path="/first" component={FirstComponent} />
+          <Route path="/second" component={SecondComponent} />
+          <Route component={FirstComponent} />
+        </Switch>
+      </div>
+    </HashRouter>
+
   );
 }
 

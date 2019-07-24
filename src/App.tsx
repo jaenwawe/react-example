@@ -1,7 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
+import './include/bootstrap';
 import './App.css';
 import { FirstComponent } from './components/my-first-component';
+import SecondComponent from './components/my-second-component';
+import NavComponent from './components/nav-component';
 
 
 /*
@@ -22,19 +24,8 @@ import { FirstComponent } from './components/my-first-component';
 */
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <FirstComponent />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <FirstComponent />
-        <p>
-          Hello React!
-          <FirstComponent />
-        </p>
-        <FirstComponent />
-      </header>
-
-      <FirstComponent />
+    <div>
+      <NavComponent />
     </div>
   );
 }

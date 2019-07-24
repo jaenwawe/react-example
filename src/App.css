@@ -93,3 +93,28 @@ nav {
   box-shadow: -10px -10px 20px 10px white,
   10px 10px 40px 10px white inset;
 }
+
+.miguel-display {
+  /* font-family: cursive; */
+  text-align: center;
+  /* width: 40vw; */
+  display: block;
+  height: 10vh;
+  margin: 10vh auto;
+  border:1px solid black;
+}
+
+.miguel-button {
+  display:block;
+  margin: 4vh auto;
+  background: lightcyan;
+}
+.miguel-button-flush {
+  background: lightcoral;
+  display: block;
+  margin: 4vh auto;
+}
+.miguel-button:hover, .miguel-button-flush:hover {
+  background: lightgrey;
+  cursor: grab;
+}

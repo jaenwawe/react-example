@@ -7,6 +7,7 @@ import NavComponent from './components/nav-component';
 import { HashRouter } from 'react-router-dom';
 import { Switch, Route } from 'react-router';
 import { ClickerComponent } from './components/clicker-component';
+import { SpinnerComponent } from './components/spinner-component';
 import {SpinningAtom} from './components/spinning-atom';
 import BallComponent from './components/ball-component';
 import { dieRollerComponent } from './components/dice-roller-component';
@@ -43,6 +44,7 @@ const App: React.FC = () => {
           <Route path="/first" component={FirstComponent} />
           <Route path="/second" component={SecondComponent} />
           <Route path="/clicker" component={ClickerComponent} />
+          <Route path="/spinner" component={SpinnerComponent} />
           <Route path="/spinning-atom" component={SpinningAtom}/>
           <Route path="/ball" component={BallComponent} />
           <Route path="/dieRoller" component={dieRollerComponent} />

@@ -7,12 +7,9 @@ import NavComponent from './components/nav-component';
 import { HashRouter, BrowserRouter } from 'react-router-dom';
 import { Switch, Route } from 'react-router';
 import { ClickerComponent } from './components/clicker-component';
-<<<<<<< HEAD
 import { dieRollerComponent } from './components/dice-roller-component';
-=======
 import JessicaComponent from './components/jessicas-component';
 import FunComponent from './components/fun-page-component';
->>>>>>> 544b758db5c51bc9a1dfce2271c9f66556bb20a6
 
 /*
   Components
@@ -44,12 +41,9 @@ const App: React.FC = () => {
           <Route path="/first" component={FirstComponent} />
           <Route path="/second" component={SecondComponent} />
           <Route path="/clicker" component={ClickerComponent} />
-<<<<<<< HEAD
           <Route path="/dieRoller" component={dieRollerComponent} />
-=======
           <Route path="/Jessica" component={JessicaComponent} />
           <Route path="/fungame" component={FunComponent} />
->>>>>>> 544b758db5c51bc9a1dfce2271c9f66556bb20a6
           <Route component={FirstComponent} />
         </Switch>
       </div>

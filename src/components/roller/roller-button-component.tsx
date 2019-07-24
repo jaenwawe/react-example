@@ -7,7 +7,7 @@ export class RollerButton extends React.Component<any, any> {
                 <button
                     // Binds a function to the click event using React
                     onClick={() =>
-                        this.props.randomize(Math.round(Math.random() * 20))}
+                        this.props.randomize(Math.round(Math.random() * 20 + 1))}
                     className="btn btn-primary"
                 >Roll</button>
                 {

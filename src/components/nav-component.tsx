@@ -29,6 +29,10 @@ const NavComponent: React.FC = () => {
                                 className="unset-anchor nav-link">Clicker</Link>
                         </li>
                         <li className="nav-item active">
+                            <Link to="/kh"
+                                className="unset-anchor nav-link">KH</Link>
+                        </li>
+
                             <Link to="/spinner"
                                 className="unset-anchor nav-link">Spinner</Link>
                         </li>

@@ -7,6 +7,7 @@ import NavComponent from './components/nav-component';
 import { HashRouter, BrowserRouter } from 'react-router-dom';
 import { Switch, Route } from 'react-router';
 import { ClickerComponent } from './components/clicker-component';
+import { KHComponent } from './components/kh-component';
 
 /*
   Components
@@ -38,6 +39,7 @@ const App: React.FC = () => {
           <Route path="/first" component={FirstComponent} />
           <Route path="/second" component={SecondComponent} />
           <Route path="/clicker" component={ClickerComponent} />
+          <Route path="/kh" component={KHComponent} />
           <Route component={FirstComponent} />
         </Switch>
       </div>

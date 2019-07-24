@@ -33,7 +33,7 @@ const NavComponent: React.FC = () => {
                             <Link to="/spinner"
                                 className="unset-anchor nav-link">Spinner</Link>
                         </li>
-
+                        <li className="nav-item active">
                             <Link to="/ball"
                                 className="unset-anchor nav-link">Ball</Link>
                         </li>

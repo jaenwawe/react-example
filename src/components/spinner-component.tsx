@@ -25,7 +25,7 @@ export class SpinnerComponent extends React.Component<any, any> {
 
     render() {
         return (
-            <div>
+            <div className="App">
                 <img style={{animation: `App-logo-spin ${this.state.speed}s linear infinite`}} src={logo} className="App-logo" alt="logo"/>
                 <SpinnerButton
                     increment={(x: number) => this.increment(x)} />

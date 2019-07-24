@@ -14,7 +14,7 @@ export class SpinnerComponent extends React.Component<any, any> {
        increment(amount: number) {
            if (this.state.speed <= 1) {
             this.setState({
-                speed: 5
+                speed: this.state.speed * .9
             });
            } else {
             this.setState({

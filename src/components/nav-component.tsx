@@ -94,15 +94,19 @@ const NavComponent: React.FC = () => {
                             </Link>
                         </li>
                         <li className="nav-item active">
+                            <Link to="/edimdb"
+                                className="unset-anchor nav-link">Ed IMDB
+                            </Link>
+                        </li>
+                        <li className="nav-item active">
                             <Link to="/prog-jokes"
                                 className="unset-anchor nav-link">Good Ole Laugh
                             </Link>
                         </li>
-
                     </ul>
                 </div>
             </nav>
-        </div>
+      </div>
     );
 }
 

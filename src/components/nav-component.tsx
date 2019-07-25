@@ -29,6 +29,13 @@ const NavComponent: React.FC = () => {
                                 className="unset-anchor nav-link">Clicker</Link>
                         </li>
                         <li className="nav-item active">
+
+
+                        <Link to="/random"
+                        className="unset-anchor nav-link">random</Link> </li>
+
+                          <li className="nav-item active">
+
                             <Link to="/luke"
                                 className="unset-anchor nav-link">Luke</Link>
                         </li>
@@ -37,6 +44,7 @@ const NavComponent: React.FC = () => {
                                 className="unset-anchor nav-link">Spinner</Link>
                         </li>
                         <li className="nav-item active">
+
                             <Link to="/ball"
                                 className="unset-anchor nav-link">Ball</Link>
                         </li>
@@ -57,11 +65,13 @@ const NavComponent: React.FC = () => {
                                 className="unset-anchor nav-link">Spinning Atom
                             </Link>
                         </li>
+
                         <li className="nav-item active">
                             <Link to="/miguel"
                                 className="unset-anchor nav-link">Miguel
                             </Link>
                         </li>
+
                     </ul>
                 </div>
             </nav>

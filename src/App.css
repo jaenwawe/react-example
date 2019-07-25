@@ -26,7 +26,7 @@
   background-color: #ffffff !important;
 }
 
-@keyframes App-logo-spin { 
+@keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
@@ -34,7 +34,7 @@
     transform: rotate(360deg);
   }
 }
-  
+
 
 nav {
   border-bottom: 1px solid #ffffff !important;
@@ -117,4 +117,20 @@ nav {
 .miguel-button:hover, .miguel-button-flush:hover {
   background: lightgrey;
   cursor: grab;
+}
+
+#person-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.person-box {
+  width: 300px;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.person-box > h3 {
+  text-align: center;
 }

@@ -16,6 +16,8 @@ import { dieRollerComponent } from './components/dice-roller-component';
 import JessicaComponent from './components/jessicas-component';
 import FunComponent from './components/fun-page-component';
 import { MiguelComponent } from './components/miguel-component';
+import { ArrayComponent } from './components/array-component';
+import { PokeComponent } from './components/poke-component';
 
 /*
   Components
@@ -56,6 +58,8 @@ const App: React.FC = () => {
           <Route path="/Jessica" component={JessicaComponent} />
           <Route path="/fungame" component={FunComponent} />
           <Route path="/miguel" component={MiguelComponent} />
+          <Route path="/arrays" component={ArrayComponent} />
+          <Route path="/poke" component={PokeComponent} />
           <Route component={FirstComponent} />
         </Switch>
       </div>

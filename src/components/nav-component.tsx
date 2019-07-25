@@ -62,6 +62,16 @@ const NavComponent: React.FC = () => {
                                 className="unset-anchor nav-link">Miguel
                             </Link>
                         </li>
+                        <li className="nav-item active">
+                            <Link to="/arrays"
+                                className="unset-anchor nav-link">Arrays
+                            </Link>
+                        </li>
+                        <li className="nav-item active">
+                            <Link to="/poke"
+                                className="unset-anchor nav-link">Poke
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             </nav>

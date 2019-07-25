@@ -20,46 +20,58 @@ const NavComponent: React.FC = () => {
                             <Link to="/first"
                                 className="unset-anchor nav-link">First</Link>
                         </li>
+                      
                         <li className="nav-item active">
                             <Link to="/second"
                                 className="unset-anchor nav-link">Second</Link>
                         </li>
+                      
                         <li className="nav-item active">
                             <Link to="/clicker"
                                 className="unset-anchor nav-link">Clicker</Link>
                         </li>
+                      
                         <li className="nav-item active">
+                            <Link to="/sum"
+                                className="unset-anchor nav-link">Sum</Link>
+                        </li>
 
+                        <li className="nav-item active">
+                            <Link to="/random"
+                                className="unset-anchor nav-link">random</Link> 
+                        </li>
 
-                        <Link to="/random"
-                        className="unset-anchor nav-link">random</Link> </li>
-
-                          <li className="nav-item active">
-
+                        <li className="nav-item active">
                             <Link to="/luke"
                                 className="unset-anchor nav-link">Luke</Link>
                         </li>
+                      
                         <li className="nav-item active">
                             <Link to="/spinner"
                                 className="unset-anchor nav-link">Spinner</Link>
                         </li>
+                      
                         <li className="nav-item active">
 
                             <Link to="/ball"
                                 className="unset-anchor nav-link">Ball</Link>
                         </li>
+                      
                         <li className="nav-item active">
                             <Link to="/dieRoller"
                                 className="unset-anchor nav-link">Roller</Link>
                         </li>
+                      
                         <li className="nav-item active">
                             <Link to="/jessica"
                                 className="unset-anchor nav-link">Jessica</Link>
                         </li>
+                      
                         <li className="nav-item active">
                             <Link to="/fungame"
                                 className="unset-anchor nav-link">Really Fun Game</Link>
                         </li>
+                      
                         <li className="nav-item active">
                             <Link to="/spinning-atom"
                                 className="unset-anchor nav-link">Spinning Atom

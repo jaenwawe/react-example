@@ -93,6 +93,11 @@ const NavComponent: React.FC = () => {
                                 className="unset-anchor nav-link">Poke
                             </Link>
                         </li>
+                        <li className="nav-item active">
+                            <Link to="/edimdb"
+                                className="unset-anchor nav-link">Ed IMDB
+                            </Link>
+                        </li>
 
                     </ul>
                 </div>

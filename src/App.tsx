@@ -7,10 +7,12 @@ import NavComponent from './components/nav-component';
 import { HashRouter, BrowserRouter } from 'react-router-dom';
 import { Switch, Route } from 'react-router';
 import { ClickerComponent } from './components/clicker-component';
+import NumComp from './components/num-comps/num-comp';
+import RandomComponent from './components/random-component';
+import {SpinningAtom} from './components/spinning-atom';
 import { LukeComponent } from './components/luke-component';
 import { KHComponent } from './components/kh-component';
 import { SpinnerComponent } from './components/spinner-component';
-import { SpinningAtom } from './components/spinning-atom';
 import BallComponent from './components/ball-component';
 import { dieRollerComponent } from './components/dice-roller-component';
 import JessicaComponent from './components/jessicas-component';
@@ -18,6 +20,7 @@ import FunComponent from './components/fun-page-component';
 import { MiguelComponent } from './components/miguel-component';
 import { ArrayComponent } from './components/array-component';
 import { PokeComponent } from './components/poke-component';
+
 
 /*
   Components
@@ -49,6 +52,9 @@ const App: React.FC = () => {
           <Route path="/first" component={FirstComponent} />
           <Route path="/second" component={SecondComponent} />
           <Route path="/clicker" component={ClickerComponent} />
+          <Route path="/sum" component={NumComp} />
+          <Route path="/random" component={RandomComponent}/>
+          <Route path="/spinning-atom" component={SpinningAtom}/>
           <Route path="/luke" component={LukeComponent} />
           <Route path="/kh" component={KHComponent} />
           <Route path="/spinner" component={SpinnerComponent} />

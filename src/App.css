@@ -134,3 +134,12 @@ nav {
 .person-box > h3 {
   text-align: center;
 }
+
+.display-container{
+  display: flex;
+  flex-direction: column
+}
+
+.goodOleStuff{
+  margin: auto;
+}

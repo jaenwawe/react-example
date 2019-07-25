@@ -70,7 +70,7 @@ export class JessicaComponent extends React.Component<any, any> {
                     <img src={this.state.url}></img>
                 </div>
                 <div id="digi-submit-container">
-                    <input type="text"
+                    <input type="number" min="1" step="1" 
                         value={this.state.inputValue}
                         onChange={(e: any) => this.updateValue(e)}></input>
                     <button onClick={() => this.searchDigimon()}>Submit</button>

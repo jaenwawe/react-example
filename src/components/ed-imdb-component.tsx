@@ -72,14 +72,15 @@ export class EdImdbComponent extends React.Component<any, EdMovieState> {
         // within it
 
         return (
-            <div>
-                <div id="display-container">
-
+            <div className="App">
+                <div>
+                    <div style={{textAlign: "center"}}>
                     {this.state.title && // only display h2 if id is truthy
-                        <h2>{this.state.title}</h2>
+                        <h2 >{this.state.title}</h2>
                     }
                         <img src={this.state.poster}></img>
-
+                    </div>
+                    <div style={{textAlign: "center"}}>
                     {this.state.title &&
                         <p>Released: {this.state.released}, Rated: {this.state.rated}</p>
                     }
@@ -92,9 +93,10 @@ export class EdImdbComponent extends React.Component<any, EdMovieState> {
                     {this.state.title &&
                         <p>Plot: {this.state.plot}</p>
                     }
-                    
+                    </div>
                 </div>
-                <div id="poke-submit-container">
+                <div>
+                    <p style={{textAlign:"center"}}>Search Movie Titles</p>
                     <input type="text"
                         value={this.state.inputValue}
                         onChange={(e: any) => this.updateValue(e)}></input>

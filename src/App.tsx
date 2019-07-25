@@ -21,6 +21,7 @@ import { MiguelComponent } from './components/miguel-component';
 import { ArrayComponent } from './components/array-component';
 import { PokeComponent } from './components/poke-component';
 import { EdImdbComponent } from './components/ed-imdb-component';
+import { ProgJokes } from './components/prog-jokes';
 
 
 /*
@@ -68,6 +69,7 @@ const App: React.FC = () => {
           <Route path="/arrays" component={ArrayComponent} />
           <Route path="/poke" component={PokeComponent} />
           <Route path="/edimdb" component={EdImdbComponent} />
+          <Route path="/prog-jokes" component={ProgJokes} />
           <Route component={FirstComponent} />
         </Switch>
       </div>

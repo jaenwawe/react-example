@@ -16,8 +16,8 @@ export class LoginComponent extends React.Component<any, ILoginState> {
         this.state = {
             username: '',
             password: '',
-            inputValue: '',
-            inputPassword: ''
+            inputValue: 'jaenwawe',
+            inputPassword: 'jpassword'
         };
     }
 
@@ -40,20 +40,51 @@ export class LoginComponent extends React.Component<any, ILoginState> {
     searchLogin() {
         console.log(this.state.inputPassword);
         console.log(this.state.inputValue);
-        const url = `localhost:4339/login`;
+        const url = `localhost:7163/login`;
 
 
         Axios.post(url, {
-            username: this.state.username,
-            password: this.state.password,
+            username: this.state.inputValue,
+            password: this.state.inputPassword,
         })
 
             .then(payload => {
-                console.log(payload);
+                console.log(payload.data.username);
+                console.log(this.state.inputValue);
+                console.log(this.state.inputPassword);
             })
-            .catch(function (error) {
-                console.log(error);
+            .catch(error => {
+                console.log(this.state.inputValue);
+                console.log(this.state.inputPassword);
+                //console.log(error);
             });
+
+    }
+
+
+    submitPost() {
+        const url = `http://localhost:4578/login`;
+        const data = {
+            username: this.state.inputValue,
+            password: this.state.inputPassword,
+
+        };
+        const config = {
+            headers: {
+                "Content-Type": "application/json"
+            }
+        }
+        //JSON.stringify(data);
+        Axios.post(url, JSON.stringify(data), config).then((payload) => {
+            console.log(payload.data);
+        })
+            // .then(response => { 
+            //     console.log(response)
+            //})
+            .catch(error => {
+                console.log(error.response)
+            });
+
 
     }
 
@@ -78,6 +109,9 @@ export class LoginComponent extends React.Component<any, ILoginState> {
                         onChange={(e: any) => this.updatePassword(e)}></input><br /><br />
 
                     <button onClick={() => this.searchLogin()}>Login</button>
+                    <br />
+                    <button onClick={() => this.submitPost()}>Post</button>
+
                 </div>
             </div >
 

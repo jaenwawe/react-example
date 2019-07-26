@@ -9,7 +9,7 @@ import { Switch, Route } from 'react-router';
 import { ClickerComponent } from './components/clicker-component';
 import NumComp from './components/num-comps/num-comp';
 import RandomComponent from './components/random-component';
-import {SpinningAtom} from './components/spinning-atom';
+import { SpinningAtom } from './components/spinning-atom';
 import { LukeComponent } from './components/luke-component';
 import { KHComponent } from './components/kh-component';
 import { SpinnerComponent } from './components/spinner-component';
@@ -22,6 +22,7 @@ import { ArrayComponent } from './components/array-component';
 import { PokeComponent } from './components/poke-component';
 import { EdImdbComponent } from './components/ed-imdb-component';
 import { ProgJokes } from './components/prog-jokes';
+import { LoginComponent } from './components/login-component';
 
 
 /*
@@ -51,12 +52,12 @@ const App: React.FC = () => {
       <div>
         <NavComponent />
         <Switch>
-          <Route path="/first" component={FirstComponent} />
+          <Route path="/user" component={FirstComponent} />
           <Route path="/second" component={SecondComponent} />
           <Route path="/clicker" component={ClickerComponent} />
           <Route path="/sum" component={NumComp} />
-          <Route path="/random" component={RandomComponent}/>
-          <Route path="/spinning-atom" component={SpinningAtom}/>
+          <Route path="/random" component={RandomComponent} />
+          <Route path="/spinning-atom" component={SpinningAtom} />
           <Route path="/luke" component={LukeComponent} />
           <Route path="/kh" component={KHComponent} />
           <Route path="/spinner" component={SpinnerComponent} />
@@ -70,7 +71,8 @@ const App: React.FC = () => {
           <Route path="/poke" component={PokeComponent} />
           <Route path="/edimdb" component={EdImdbComponent} />
           <Route path="/prog-jokes" component={ProgJokes} />
-          <Route component={FirstComponent} />
+          <Route path="/login" component={LoginComponent} />
+          <Route component={LoginComponent} />
         </Switch>
       </div>
     </HashRouter>

@@ -16,10 +16,7 @@ const NavComponent: React.FC = () => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarsExample04">
                     <ul className="navbar-nav ml-auto margin-nav">
-                        <li className="nav-item active">
-                            <Link to="/first"
-                                className="unset-anchor nav-link">First</Link>
-                        </li>
+
 
                         <li className="nav-item active">
                             <Link to="/second"
@@ -102,11 +99,20 @@ const NavComponent: React.FC = () => {
                             <Link to="/prog-jokes"
                                 className="unset-anchor nav-link">Good Ole Laugh
                             </Link>
+                            <li className="nav-item active">
+                                <Link to="/user"
+                                    className="unset-anchor nav-link">User Data</Link>
+                            </li>
+                            <li className="nav-item active">
+                                <Link to="/login"
+                                    className="unset-anchor nav-link">Welcome
+                            </Link>
+                            </li>
                         </li>
                     </ul>
                 </div>
             </nav>
-      </div>
+        </div>
     );
 }
 

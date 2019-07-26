@@ -1,32 +1,46 @@
 import * as React from 'react';
 
-/**
- * This is an example of a class constructor that extends React.Component.
- *
- * Properties, or 'props', are values passed from the containing element
- * to the child element.
- *
- * If we have a constructor, we must pass props to the super constructor.
- *
- */
+
 export class FirstComponent extends React.Component<any, any> {
 
     constructor(props: any) {
         console.log(props);
-
-        // Registering the properties will allow them to be correctly processed
-        // and they will then be accessible from `this.props`
         super(props);
     }
 
     render() {
-        // We can utilize this.props.name to retrieve the name stored in props
+
         console.log(this.props.name);
         return (
             <div>
-                <h3 id="first">Hello {this.props.name}!</h3>
-                <p>This is my first component!</p>
+                <h3 id="first">User Data {this.props.name}</h3>
+                <div id="user-main-container">
+
+                    <div>User Id:</div>
+                    <input type="text" id="user_id" name="user_model" />
+
+                    <div>User Name:</div>
+                    <input type="text" id="user_name" name="user_mail" />
+
+                    <div>Password:</div>
+                    <input type="password" id="pwd" />
+
+                    <div>Email:</div>
+                    <input type="email" id="user_email" />
+
+                    <div>First Name:</div>
+                    <input type="text" id="first_name" />
+
+                    <div>Last Name:</div>
+                    <input type="text" id="last_name" />
+
+                    <div>Role:</div>
+                    <input type="role" id="user_role" name="email" />
+                </div>
+
+
             </div>
         );
     }
+
 }
